@@ -258,6 +258,8 @@ body {
 
 /* Contact Section */
 .contact-section {
+    height: 84vh;
+    background-image: url(./logo/contactus-background.png);
     display : flex;
     padding: 4rem 2rem;
 }
@@ -363,7 +365,8 @@ body {
 /* Footer */
 footer {
     text-align: center;
-    padding: 2rem;
+    padding: 1rem 2rem;
+    bottom: 0%;
     color: #666666;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
@@ -396,7 +399,39 @@ footer {
         text-align: center;
     }
 
-    .skill-grid {
+    .profile-image img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .intro-text h1, .intro-text h2 {
+        font-size: 2rem;
+    }
+
+    .intro-para {
+        font-size: 1rem;
+    }
+
+    .skill-grid, .tool-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-container {
+        width: 100%;
+        margin: 0;
+    }
+
+    .social-links {
+        padding-left: 0;
+        justify-content: center;
     }
 }
