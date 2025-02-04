@@ -59,6 +59,11 @@ body {
     cursor: pointer;
 }
 
+/* Add styles for the menu button when active */
+.menu-btn.active + .nav-links {
+    display: flex;
+}
+
 /* Home Section */
 .home-section {
     padding: 4rem 2rem;
